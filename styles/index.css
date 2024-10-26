@@ -1,0 +1,144 @@
+:root {
+  --lightBg: white;
+  --lightText: black;
+  --secondarycolor: rgb(41, 240, 41);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%; /* vw-viewable width*/
+  padding: 20px 12px 20px 12px;
+  border-bottom: 1px solid rgb(186, 186, 186);
+  z-index: 1000;
+}
+
+.header-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-icons div i {
+  font-size: 12pt;
+}
+header section:nth-child(1) {
+  flex: 1;
+  max-width: 100%;
+}
+
+header section:nth-child(1) h1 {
+  color: rgb(20, 179, 20);
+}
+
+header section:nth-child(2) {
+  flex: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2px;
+  max-width: 300px;
+}
+
+header section:nth-child(2) div {
+  display: flex;
+  flex: 1;
+  width: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4px;
+}
+
+.nav {
+  margin-top: 69px;
+  display: flex;
+  padding: 10px 10px 20px 10px;
+  justify-content: start;
+}
+
+.nav div {
+  padding: 5px 15px;
+  background-color: rgb(228, 228, 228);
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  color: rgb(112, 111, 111);
+}
+main {
+  width: 100%;
+  height: 10000px;
+}
+
+.message {
+  position: relative;
+  display: flex;
+  padding: 5px;
+  margin: 20px 8px;
+  height: 50px;
+}
+
+.message > div:nth-child(1) {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  outline: 2px solid var(--secondarycolor);
+  background-color: black;
+  margin-right: 9px;
+}
+.message > div:nth-child(1) img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.message > div:nth-child(2) div:nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.message > div:nth-child(2) div:nth-child(2) {
+  font-size: 12px;
+  font-weight: 200;
+  color: gray;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+.message > div:nth-child(2) span {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  font-size: 0.6rem;
+  background-color: var(--secondarycolor);
+  color: white;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.message > div:nth-last-child(1) {
+  position: absolute;
+  right: 0;
+  color: var(--secondarycolor);
+  font-size: 10px;
+  right: 10px;
+}

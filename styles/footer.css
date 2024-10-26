@@ -1,0 +1,68 @@
+.footer-holder {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgb(173, 169, 169);
+}
+
+.footer div {
+  width: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: 200;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.footer .selected {
+  color: rgb(3, 77, 3);
+  font-weight: 600;
+}
+
+.footer div div:nth-child(1) {
+  width: 100%;
+}
+
+.footer .f-option .hover {
+  font-weight: 400;
+}
+
+.footer div:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  z-index: -3;
+  background-color: lime;
+  opacity: 0.2;
+  border-radius: 20px;
+  transform-origin: center;
+  transition: width 0.25s ease;
+}
+
+.footer .hover div:nth-child(1)::before {
+  width: 100%;
+}
+.footer .selected div:nth-child(1)::before {
+  width: 100%;
+}
