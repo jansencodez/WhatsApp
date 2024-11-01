@@ -1,0 +1,23 @@
+<!-- sign-in.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp - Sign In</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sign In</h1>
+    </header>
+    <main>
+      <form id="sign-in-form" onsubmit="signIn(event)">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Sign In</button>
+      </form>
+      <div id="error-message" style="color: red"></div>
+    </main>
+    <script src="../../js/signIn.js"></script>
+  </body>
+</html>

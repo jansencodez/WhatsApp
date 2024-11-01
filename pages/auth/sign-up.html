@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp - sign up</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sign Up</h1>
+    </header>
+    <main>
+      <form id="sign-up-from" onsubmit="signUp(event)">
+        <input
+          type="text"
+          id="new-username"
+          placeholder="usename"
+          required
+          autocomplete
+        />
+        <input
+          type="password"
+          id="new-password"
+          placeholder="password"
+          required
+          autocomplete
+        />
+        <button type="submit">Sign Up</button>
+      </form>
+      <div id="sign-up-message"></div>
+
+      <div>Already have an account? <a href="sign-in.html">sign in</a></div>
+    </main>
+
+    <script src="../../js/signUp.js"></script>
+  </body>
+</html>

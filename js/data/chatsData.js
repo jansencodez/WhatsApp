@@ -3,57 +3,93 @@ const chatsData = [
     id: 1,
     userName: "John",
     profileImage: "../images/image.jpg",
-    time: "9.30",
-    msg: "class imebounce ama??? :)",
+    chatrooms: [
+      {
+        id: 1,
+        messages: [
+          { text: "class imebounce ama???", time: "9.30" },
+          { text: "class imebounce ama??? :)", time: "9.31" },
+          { text: "class imebounce ama??? :)", time: "9.32" },
+        ],
+      },
+    ],
   },
   {
     id: 2,
     userName: "Msee wa home",
     profileImage: "../images/image.jpg",
-    time: "9.30",
-    msg: "class imebounce ama??? :)",
+    chatrooms: [
+      {
+        id: 1,
+        messages: [{ text: "class imebounce ama??? :)", time: "9.30" }],
+      },
+    ],
   },
   {
     id: 3,
-    userName: "Kiptoo ",
+    userName: "Kiptoo",
     profileImage: "../images/image.jpg",
-    time: "9.30",
-    msg: "class imebounce ama??? :)",
+    chatrooms: [
+      {
+        id: 1,
+        messages: [{ text: "class imebounce ama??? :)", time: "9.30" }],
+      },
+    ],
   },
   {
     id: 4,
     userName: "Elon",
     profileImage: "../images/image.jpg",
-    time: "9.30",
-    msg: "class imebounce ama??? :)",
+    chatrooms: [
+      {
+        id: 1,
+        messages: [{ text: "class imebounce ama??? :)", time: "9.30" }],
+      },
+    ],
   },
   {
     id: 5,
     userName: "Jack",
     profileImage: "../images/image.jpg",
-    time: "7.35",
-    msg: "nothing? How is that possible",
+    chatrooms: [
+      {
+        id: 1,
+        messages: [{ text: "nothing? How is that possible", time: "7.35" }],
+      },
+    ],
   },
   {
     id: 6,
     userName: "Jacob",
     profileImage: "../images/image.jpg",
-    time: "8.45",
-    msg: "class imebounce ama??? :)",
+    chatrooms: [
+      {
+        id: 1,
+        messages: [{ text: "class imebounce ama??? :)", time: "8.45" }],
+      },
+    ],
   },
   {
     id: 7,
     userName: "Jonatham",
     profileImage: "../images/image.jpg",
-    time: "9.30",
-    msg: "ziii!!",
+    chatrooms: [
+      {
+        id: 1,
+        messages: [{ text: "ziii!!", time: "9.30" }],
+      },
+    ],
   },
   {
     id: 8,
     userName: "Samuel",
     profileImage: "../images/image.jpg",
-    time: "13.03",
-    msg: "Unakam?",
+    chatrooms: [
+      {
+        id: 1,
+        messages: [{ text: "Unakam?", time: "13.0" }],
+      },
+    ],
   },
 ];
 

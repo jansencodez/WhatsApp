@@ -79,6 +79,7 @@ header section:nth-child(2) div {
 main {
   width: 100%;
   height: 10000px;
+  margin-top: 40px;
 }
 
 .message {
@@ -141,4 +142,42 @@ main {
   color: var(--secondarycolor);
   font-size: 10px;
   right: 10px;
+}
+
+#chat-room {
+  padding: 10px;
+  margin-top: 60px;
+}
+
+.profile-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message-content {
+  flex: 1;
+}
+
+.msg-time {
+  font-size: 0.85em;
+  color: #888;
+}
+
+#chat-room {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-room-message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 3px #888;
+  width: max-content;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 1px;
 }

@@ -1,18 +1,17 @@
 import navigateTo from "./utils/navigateTo.js";
 
-export default function loadFooter() {
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("/components/footer.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById("footer-placeholder").innerHTML = data;
+export default function loadFooter(replyTab = "", id) {
+  fetch("/components/footer.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("footer-placeholder").innerHTML = data;
 
-        const title = document.getElementById("title");
-        const chats = document.getElementById("chats");
-        const updates = document.getElementById("updates");
-        const communities = document.getElementById("communities");
-        const calls = document.getElementById("calls");
+      const chats = document.getElementById("chats");
+      const updates = document.getElementById("updates");
+      const communities = document.getElementById("communities");
+      const calls = document.getElementById("calls");
 
+      if (!id) {
         if (updates) {
           updates.addEventListener("click", () => {
             navigateTo("/pages/updates.html");
@@ -73,7 +72,11 @@ export default function loadFooter() {
             });
           });
         }
-      })
-      .catch((error) => console.log("error loading footer:", error));
-  });
+      }
+
+      if (id) {
+        document.getElementById("footer").innerHTML = replyTab;
+      }
+    })
+    .catch((error) => console.log("error loading footer:", error));
 }
